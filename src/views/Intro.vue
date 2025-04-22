@@ -55,10 +55,12 @@
   @media (max-width: 768px) {
   .intro-container {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* 👈 shift content upward */
     text-align: center;
-    padding: 20px;
-    margin-top: 60px; /* slightly reduced for mobile */
+    padding: 20px 20px 40px;
+    margin-top: 120px; /* ⬆️ keeps it below nav */
+    height: auto; /* 🛠 allow content to grow */
+    gap: 20px; /* ⬇️ smaller gap between text and image */
   }
 
   .text-section {
@@ -66,22 +68,23 @@
   }
 
   .headshot {
-    width: 240px;
-    height: 240px;
-    margin-top: 20px;
+    width: 220px;
+    height: 220px;
+    margin-top: 0; /* ⬅️ Remove unnecessary spacing */
   }
 
   .greeting {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .tagline {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .subtagline {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
+
 
   </style>

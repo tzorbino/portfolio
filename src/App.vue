@@ -25,15 +25,14 @@ html, body {
 }
 
 #app {
-  min-height: 100vh; /* ✅ Allow content to grow */
-  width: 100%;
+  min-height: 100vh;
+  width: 100vw; /* ✅ Ensure full width */
   background-image: url('/portfolioWallpaper.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
+  overflow-x: hidden;
 }
 
 .background {
