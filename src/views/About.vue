@@ -38,8 +38,8 @@
 .about-container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto 40px;
-  padding: 140px 20px 20px; 
+  margin: 120px auto 100px; /* ⬅️ Pushes container down BELOW nav bar */
+  padding: 20px;
   color: #f0f0f0;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
@@ -84,8 +84,8 @@ h1 {
 
 @media (max-width: 768px) {
   .about-container {
-    padding-top: 400px; 
-    margin: 0 10px 40px;
+    margin: 300px 10px 40px; /* ⬅️ Extra top space for stacked mobile nav */
+    padding: 20px;
     width: calc(100% - 20px);
   }
 }
