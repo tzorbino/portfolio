@@ -84,7 +84,7 @@ h1 {
 
 @media (max-width: 768px) {
   .about-container {
-    padding-top: 180px; 
+    padding-top: 400px; 
     margin: 0 10px 40px;
     width: calc(100% - 20px);
   }
