@@ -36,9 +36,10 @@
   
   <style scoped>
   .about-container {
+  width: 90vw;
   max-width: 800px;
-  margin: 120px auto 40px;
-  padding: 30px 20px;
+  margin: 140px auto 60px;
+  padding: 20px;
   color: #f0f0f0;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
@@ -53,21 +54,23 @@ h1 {
   font-size: 2.2rem;
 }
 
-/* Skills section stays the same */
 .skills-section {
   margin-top: 40px;
 }
+
 .skills-title {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
+
 .badges {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
+
 .badge {
   background-color: rgba(0, 188, 212, 0.1);
   border: 1px solid #00bcd4;
