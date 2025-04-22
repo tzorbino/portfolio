@@ -11,7 +11,7 @@
         Originally from Memphis, TN, I spent time in Boston before settling in Philadelphia, where I’m currently building out tools and web experiences that solve real-world problems with clean, practical code.
       </p>
   
-      <!-- 👇 Skills section -->
+      <!-- Skills section -->
       <div class="skills-section">
         <h2 class="skills-title">Skills</h2>
         <div class="badges">
@@ -38,8 +38,8 @@
 .about-container {
   max-width: 800px;
   width: 100%;
-  margin: 120px auto 40px;
-  padding: 20px;
+  margin: 0 auto 40px;
+  padding: 120px 20px 20px; 
   color: #f0f0f0;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
@@ -47,6 +47,7 @@
   line-height: 1.7;
   box-sizing: border-box;
 }
+
 
 h1 {
   text-align: center;
