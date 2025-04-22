@@ -36,16 +36,16 @@
   
   <style scoped>
   .about-container {
-    max-width: 800px;
-    margin: 80px auto;
-    padding: 120px 20px 20px;
-    color: #f0f0f0;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-top: 100px;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 140px 20px 20px; /* ⬅️ bumped from 120px to 140px */
+  color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-top: 100px;
+}
   
   h1 {
     text-align: center;
@@ -80,6 +80,29 @@
     font-size: 0.95rem;
     font-weight: 500;
   }
+
+  @media (max-width: 768px) {
+    .about-container {
+    padding: 160px 16px 20px; /* ⬅️ bumped from 140px to 160px */
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .skills-title {
+    font-size: 1.4rem;
+  }
+
+  .badge {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+  }
+}
+
+
+
   </style>
   
   

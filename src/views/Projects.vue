@@ -23,7 +23,8 @@
   
   <style scoped>
 .projects-page {
-  padding: 120px 40px 40px; /* top padding pushes content under nav */
+  margin-top: 100px;
+  padding: 40px 40px 40px;
   color: #f5f5f5;
 }
 
@@ -76,6 +77,39 @@
 .project-links a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding-top: 300px; /* a little more on mobile in case nav stacks */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-links a {
+    margin: 0;
+  }
+}
+
+
+
 </style>
 
 

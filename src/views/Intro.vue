@@ -51,4 +51,37 @@
     color: #aaa;
     font-style: italic;
   }
+
+  @media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px; /* slightly reduced for mobile */
+  }
+
+  .text-section {
+    max-width: 100%;
+  }
+
+  .headshot {
+    width: 240px;
+    height: 240px;
+    margin-top: 20px;
+  }
+
+  .greeting {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .subtagline {
+    font-size: 0.95rem;
+  }
+}
+
   </style>

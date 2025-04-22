@@ -33,7 +33,7 @@
     color: #f5f5f5;
     max-width: 700px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 200px;
   }
   
   .title {
@@ -92,6 +92,36 @@
   .contact-form button:hover {
     background-color: #0097a7;
   }
+
+  @media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+    margin-top: 140px; /* extra space below navbar on mobile */
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+
   </style>
   
   

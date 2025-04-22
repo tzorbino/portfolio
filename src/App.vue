@@ -43,16 +43,23 @@ html, body {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 30px;
+  flex-direction: row;
+  flex-wrap: nowrap; /* 🚫 Do not wrap */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 10px 20px;
   border-radius: 10px;
   z-index: 10;
+  overflow-x: auto; /* ✅ Scroll if needed on small screens */
+  -webkit-overflow-scrolling: touch;
+  max-width: 100vw; /* prevent overflow */
 }
 
 .nav-link {
@@ -60,6 +67,8 @@ html, body {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1rem;
+  white-space: nowrap; /* 👈 Keeps each link on one line */
+  padding: 4px 8px;
   transition: color 0.3s ease;
 }
 
@@ -73,6 +82,27 @@ html, body {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    gap: 10px;
+    padding: 8px 12px;
+    top: 10px;
+  }
+
+  .navbar {
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+
+  .page-content {
+    padding-top: 140px; /* Extra space to account for stacked navbar */
+  }
 }
 
 </style>
