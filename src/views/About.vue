@@ -37,67 +37,53 @@
   <style scoped>
   .about-container {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 140px 20px 20px; /* ⬅️ bumped from 120px to 140px */
+  margin: 120px auto 40px;
+  padding: 30px 20px;
   color: #f0f0f0;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
   font-size: 1.1rem;
   line-height: 1.7;
-  margin-top: 100px;
+  box-sizing: border-box;
 }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 24px;
-    font-size: 2.2rem;
-  }
-  
-  /* 👇 Styles for the new section */
-  .skills-section {
-    margin-top: 40px;
-  }
-  
-  .skills-title {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-  
-  .badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .badge {
-    background-color: rgba(0, 188, 212, 0.1);
-    border: 1px solid #00bcd4;
-    color: #00bcd4;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
 
-  @media (max-width: 768px) {
-    .about-container {
-    padding: 160px 16px 20px; /* ⬅️ bumped from 140px to 160px */
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2.2rem;
+}
+
+/* Skills section stays the same */
+.skills-section {
+  margin-top: 40px;
+}
+.skills-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.badge {
+  background-color: rgba(0, 188, 212, 0.1);
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* ✅ Mobile fix */
+@media (max-width: 768px) {
+  .about-container {
+    margin: 160px 16px 40px; /* add side margin to prevent overflow */
+    padding: 20px;
     font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .skills-title {
-    font-size: 1.4rem;
-  }
-
-  .badge {
-    font-size: 0.85rem;
-    padding: 5px 12px;
   }
 }
 
