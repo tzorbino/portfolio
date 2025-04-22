@@ -1,5 +1,18 @@
-# Vue 3 + Vite
+# Tony Zorbino – Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome to my personal portfolio! This site highlights my journey into software development, showcasing the skills I’ve gained and the projects I’ve built along the way.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 🚀 Tech Stack
+
+- Java, Spring Boot, SQL
+- HTML, CSS, JavaScript, Vue.js
+- Git, IntelliJ, PostgreSQL
+
+## 📁 Project Highlight
+
+**Kwik Tips** – A full-stack web app that automates tip distribution for restaurant and bar staff using shift hours and custom percentages.  
+[Live Site](https://kwiktips.netlify.app) • [Frontend Code](https://github.com/zorbino/kwik-tips-frontend) • [Backend Code](https://github.com/zorbino/kwik-tips-backend)
+
+## 🌍 About Me
+
+I'm a full-stack developer with a background in hospitality, now building clean, practical tools that solve real
