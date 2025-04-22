@@ -39,7 +39,7 @@
   max-width: 800px;
   width: 100%;
   margin: 0 auto 40px;
-  padding: 120px 20px 20px; 
+  padding: 140px 20px 20px; 
   color: #f0f0f0;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
@@ -84,8 +84,8 @@ h1 {
 
 @media (max-width: 768px) {
   .about-container {
-    margin: 160px 10px 40px;
-    padding: 20px;
+    padding-top: 180px; 
+    margin: 0 10px 40px;
     width: calc(100% - 20px);
   }
 }
