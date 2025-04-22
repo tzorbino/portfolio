@@ -35,10 +35,10 @@
   </template>
   
   <style scoped>
-  .about-container {
-  width: 90vw;
+.about-container {
   max-width: 800px;
-  margin: 140px auto 60px;
+  width: 100%;
+  margin: 120px auto 40px;
   padding: 20px;
   color: #f0f0f0;
   background-color: rgba(0, 0, 0, 0.4);
@@ -81,17 +81,14 @@ h1 {
   font-weight: 500;
 }
 
-/* ✅ Mobile fix */
 @media (max-width: 768px) {
   .about-container {
-    margin: 160px 16px 40px; /* add side margin to prevent overflow */
+    margin: 160px 10px 40px;
     padding: 20px;
-    font-size: 1rem;
+    width: calc(100% - 20px);
   }
 }
+</style>
 
-
-
-  </style>
   
   
