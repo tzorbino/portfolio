@@ -4,6 +4,7 @@
       <router-link to="/" class="nav-link">Home</router-link>
       <router-link to="/about" class="nav-link">About</router-link>
       <router-link to="/projects" class="nav-link">Projects</router-link>
+      <router-link to="/metacognitives" class="nav-link">Metacognitives</router-link>
       <router-link to="/contact" class="nav-link">Contact</router-link>
       <a href="/Zorbino_Resume.pdf" target="_blank" class="nav-link">Resume</a>
     </nav>
