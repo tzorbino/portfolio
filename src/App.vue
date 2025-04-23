@@ -17,29 +17,33 @@
 
 
 <style>
+body {
+  background: url('/portfolioWallpaper.png') center center / cover no-repeat fixed;
+  background-color: #000; /* fallback color */
+}
 html, body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden; /* ✅ Only hide horizontal scroll, not vertical */
+  overflow-x: hidden;
 }
 
 #app {
   min-height: 100vh;
-  width: 100vw; /* ✅ Ensure full width */
-  background-image: url('/portfolioWallpaper.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .background {
   flex: 1;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .navbar {
@@ -49,7 +53,7 @@ html, body {
   transform: translateX(-50%);
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; /* 🚫 Do not wrap */
+  flex-wrap: nowrap; 
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -57,9 +61,9 @@ html, body {
   padding: 10px 20px;
   border-radius: 10px;
   z-index: 10;
-  overflow-x: auto; /* ✅ Scroll if needed on small screens */
+  overflow-x: auto; 
   -webkit-overflow-scrolling: touch;
-  max-width: 100vw; /* prevent overflow */
+  max-width: 100vw;
 }
 
 .nav-link {
@@ -67,7 +71,7 @@ html, body {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1rem;
-  white-space: nowrap; /* 👈 Keeps each link on one line */
+  white-space: nowrap;
   padding: 4px 8px;
   transition: color 0.3s ease;
 }
@@ -77,11 +81,13 @@ html, body {
 }
 
 .page-content {
-  padding-top: 80px; /* 👈 Adjust based on navbar height */
-  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -101,7 +107,7 @@ html, body {
   }
 
   .page-content {
-    padding-top: 140px; /* Extra space to account for stacked navbar */
+    padding-top: 140px;
   }
 }
 

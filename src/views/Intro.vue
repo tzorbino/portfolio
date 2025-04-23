@@ -58,7 +58,7 @@
     justify-content: flex-start; /* 👈 shift content upward */
     text-align: center;
     padding: 20px 20px 40px;
-    margin-top: 120px; /* ⬆️ keeps it below nav */
+    margin-top: 50px; /* ⬆️ keeps it below nav */
     height: auto; /* 🛠 allow content to grow */
     gap: 20px; /* ⬇️ smaller gap between text and image */
   }

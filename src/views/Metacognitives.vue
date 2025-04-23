@@ -27,7 +27,7 @@
   .metacognitive-container {
     max-width: 800px;
     margin: 100px auto;
-    margin-top: 400px;
+    margin-top: 200px;
     padding: 40px 20px;
     color: #f5f5f5;
     background-color: rgba(0, 0, 0, 0.4);
@@ -55,7 +55,7 @@
   
   @media (max-width: 768px) {
     .metacognitive-container {
-      margin-top: 700px;
+      margin-top: 100px;
       padding: 30px 16px;
       font-size: 1rem;
     }

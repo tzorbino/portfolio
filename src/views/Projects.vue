@@ -80,7 +80,7 @@
 
 @media (max-width: 768px) {
   .projects-page {
-    padding-top: 300px; /* a little more on mobile in case nav stacks */
+    padding-top: 10px; /* a little more on mobile in case nav stacks */
     padding-left: 20px;
     padding-right: 20px;
   }

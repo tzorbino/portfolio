@@ -84,7 +84,7 @@ h1 {
 
 @media (max-width: 768px) {
   .about-container {
-    margin: 300px 10px 40px; /* ⬅️ Extra top space for stacked mobile nav */
+    margin: 100px 10px 40px; /* ⬅️ Extra top space for stacked mobile nav */
     padding: 20px;
     width: calc(100% - 20px);
   }
