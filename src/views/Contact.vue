@@ -96,7 +96,7 @@
   @media (max-width: 768px) {
   .contact-container {
     padding: 20px;
-    margin-top: 100px; /* extra space below navbar on mobile */
+    margin-top: 100px; 
   }
 
   .title {
