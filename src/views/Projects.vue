@@ -1,27 +1,33 @@
 <template>
-    <div class="projects-page">
-      <h1 class="title">Projects</h1>
-  
-      <div class="project-card">
-        <img src="/kwikTipsScreenshot.png" alt="Kwik Tips App Screenshot" class="project-image" />
-        <div class="project-info">
-          <h2>Kwik Tips</h2>
-          <p>
-            Kwik Tips is a tip distribution web application designed for bar and restaurant staff. It automates tip-outs for bartenders, barbacks, and food runners using shift hours and custom percentages. Built with a Java Spring Boot backend, PostgreSQL database, and Vue.js frontend.
-          </p>
-          <div class="project-links">
-            <a href="https://kwiktips.netlify.app" target="_blank">Live Site</a>
-            <a href="https://github.com/zorbino/kwik-tips-frontend" target="_blank">Frontend Code</a>
-            <a href="https://github.com/zorbino/kwik-tips-backend" target="_blank">Backend Code</a>
-          </div>
+  <div class="projects-page">
+    <h1 class="title">Projects</h1>
+
+    <div class="project-card">
+      <img src="/kwikTipsScreenshot.png" alt="Kwik Tips App Screenshot" class="project-image" />
+      <div class="project-info">
+        <h2>Kwik Tips</h2>
+        <p>
+          Kwik Tips is a completed tip distribution app built for bar and restaurant teams. It automates payouts to
+          bartenders, barbacks, and food runners based on shift times and custom percentages. The app supports
+          anonymous users and generates detailed tip-out reports instantly. Built with Java Spring Boot,
+          PostgreSQL, and Vue.js for the web frontend, with a mobile version built in Flutter.
+        </p>
+
+        <div class="project-links">
+          <a href="https://kwiktips.netlify.app" target="_blank">Live Web App</a>
+          <a href="https://github.com/zorbino/kwik-tips-frontend" target="_blank">Web Frontend (Vue)</a>
+          <a href="https://github.com/zorbino/kwik-tips-backend" target="_blank">Backend (Spring Boot)</a>
+          <a href="https://github.com/tzorbino/kwik_tips_mobile" target="_blank">Mobile Frontend (Flutter)</a>
         </div>
+
       </div>
     </div>
-  </template>
-  
-  
-  
-  <style scoped>
+  </div>
+</template>
+
+
+
+<style scoped>
 .projects-page {
   margin-top: 100px;
   padding: 40px 40px 40px;
@@ -80,7 +86,8 @@
 
 @media (max-width: 768px) {
   .projects-page {
-    padding-top: 10px; /* a little more on mobile in case nav stacks */
+    padding-top: 10px;
+    /* a little more on mobile in case nav stacks */
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -107,11 +114,4 @@
     margin: 0;
   }
 }
-
-
-
 </style>
-
-
-  
-  
