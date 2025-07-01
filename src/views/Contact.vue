@@ -30,7 +30,7 @@
   <style scoped>
   .contact-container {
     padding: 40px;
-    color: #f5f5f5;
+    color: #ccc5b9;
     max-width: 700px;
     margin: auto;
     margin-top: 200px;

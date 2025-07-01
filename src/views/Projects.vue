@@ -3,8 +3,15 @@
     <h1 class="title">Projects</h1>
 
     <div class="project-card">
-      <img src="/kwikTipsScreenshot.png" alt="Kwik Tips App Screenshot" class="project-image" />
       <div class="project-info">
+        <!-- Loom Video First -->
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.loom.com/embed/ea21365b137244fab41181562dd7ac96?sid=c8137cc4-bb2a-415f-94ee-3251762c67ef"
+            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+        <!-- Project Content -->
         <h2>Kwik Tips</h2>
         <p>
           Kwik Tips is a completed tip distribution app built for bar and restaurant teams. It automates payouts to
@@ -19,9 +26,12 @@
           <a href="https://github.com/zorbino/kwik-tips-backend" target="_blank">Backend (Spring Boot)</a>
           <a href="https://github.com/tzorbino/kwik_tips_mobile" target="_blank">Mobile Frontend (Flutter)</a>
         </div>
-
       </div>
     </div>
+
+
+
+
   </div>
 </template>
 
@@ -31,7 +41,7 @@
 .projects-page {
   margin-top: 100px;
   padding: 40px 40px 40px;
-  color: #f5f5f5;
+  color: #ccc5b9;
 }
 
 .title {
@@ -41,16 +51,14 @@
 }
 
 .project-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
   background-color: rgba(28, 28, 30, 0.8);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   padding: 20px;
+  margin-bottom: 40px;
 }
+
 
 .project-image {
   width: 300px;
@@ -113,5 +121,24 @@
   .project-links a {
     margin: 0;
   }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
 }
 </style>

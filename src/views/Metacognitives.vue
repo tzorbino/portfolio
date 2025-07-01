@@ -4,36 +4,50 @@
 
     <section class="entry">
       <h2>What I Learned Building Kwik Tips</h2>
+
       <p>
-        Working in high-volume bars and restaurants means constantly juggling fast-paced service, loud environments, and
-        staying cool under pressure. But after the rush dies down, one of the most frustrating parts is doing tip-outs.
+        Working in high volume bars and restaurants means juggling fast paced service and staying cool under pressure.
+        But once the rush dies down, and you’ve washed the last bar mat, it’s time to get paid. Tip outs! Everyone is
+        exhausted, some people have already left and are coming to pick up their cash the next day, and everyone else?
+        It’s all eyes on you. They want to get paid and go home, and so do you. That’s why having a clean, readable tip
+        sheet is so important. It ensures that everyone, including those who aren’t there for tip outs, can clearly see
+        the breakdown of what they were paid and why. No confusion, just transparency.
       </p>
+
       <p>
-        You're exhausted, it's 4am, and now you have to split up a pile of cash and credit card tips between multiple
-        bartenders, barbacks, and food runners. I've worked on teams ranging from three to fourteen people or more, with tip
-        pools anywhere from a couple thousand to nearly twenty grand. Every place handles it a little differently, but it's
-        never easy. I built Kwik Tips to simplify the process and take the mental math out of the end of your shift.
+        I’ve worked on teams of three to fourteen people, with tip pools ranging from a couple thousand to nearly twenty
+        grand. Every place handles it differently, but it’s never easy. I built <strong>Kwik Tips</strong> to simplify
+        this process and eliminate the end of shift mental math.
       </p>
+
       <p>
-        The logic behind the app had to be both flexible and accurate. I designed it to calculate shift hours
-        automatically based on clock-in and clock-out times. From there, it splits tips proportionally among bartenders
-        based on hours worked, while also factoring in barback and food runner tip-outs. Users can enter custom
-        percentages for each role, since every bar has its own system. Whether one barback worked a partial shift or
-        multiple barbacks split a long one, the math adjusts accordingly. The same applies to food runners, whose
-        payouts are based on entered food sales. The system then generates a clean report that breaks everything down by
-        person.
+        On the technical side, I used SQL to design the database and Java with Spring Boot to build the backend logic
+        and API. For the web app, I built the frontend using Vue.js, keeping the interface clean and responsive so users
+        could input shift details quickly without confusion. When it came time to go mobile, I wanted flexibility, 
+        which is why I chose Flutter. It allowed me to write one codebase that works across both iOS and Android, making
+        the app accessible to a broader range of users.
       </p>
+
       <p>
-        One of the biggest challenges was making sure the logic worked across different scenarios. I had to think
-        through edge cases like uneven shifts, multiple barbacks, or tips that came mostly in cash or mostly on cards.
-        The app also had to be customizable without being overwhelming. Striking that balance between flexibility and
-        simplicity took a lot of iteration.
+        The app’s logic had to be both flexible and precise. It automatically calculates shift hours from clock in and
+        clock out times, then distributes tips proportionally based on hours worked. Barback and food runner tip outs
+        are factored in using custom percentages and food sales, since each bar has its own system. Whether one barback
+        worked a partial shift or multiple covered the full night, the app adjusts accordingly. The final output is a
+        clean, shareable report that breaks everything down by person.
       </p>
+
       <p>
-        What I'm most proud of is that this isn't just a project I built for fun. It's a real solution to a real problem
-        I dealt with for years. Now, my former coworkers and other folks in the industry can use it to save time, reduce
-        stress, and get home a little sooner after a long shift.
+        One of the biggest challenges was building logic that worked across so many scenarios like uneven shifts, mostly
+        cash or mostly card tips, or multiple barbacks splitting hours. I focused on making the app customizable without
+        overwhelming the user, and finding that balance took several rounds of iteration.
       </p>
+
+      <p>
+        What I’m most proud of is that <strong>Kwik Tips</strong> isn’t just a portfolio piece. It’s a real solution to
+        a real problem I faced for years. It’s now helping others in the industry save time and get home
+        a little sooner after a long shift.
+      </p>
+
 
     </section>
   </div>
@@ -45,7 +59,7 @@
   margin: 100px auto;
   margin-top: 200px;
   padding: 40px 20px;
-  color: #f5f5f5;
+  color: #ccc5b9;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
   font-size: 1.05rem;
